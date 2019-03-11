@@ -29,33 +29,36 @@ header h1{color: white;
 }
 
 #contenido {
-  padding-top: 6em;
+  padding-top: 5.4em;
 }
 #Imagen1 figure img{
   width: 85%;
   max-width: 900px;
   display: block;
   margin: auto;
-  padding-bottom: 2em;
 }
 
 .ContenedorFlex{
   display: flex;
   flex-direction: row;
+  background-color: #d5c75f;
+  width: 100%;
+  border: 1px solid white;
 }
 .ContenedorFlex div figure img{
-    width: 80%;
+    width: 70%;
     padding: 0;
     margin-left: 0;
     display: block;
     margin: auto;
+    align-items: center;
   }
   #contenido div figure{
     width: 100%;
     margin: 0;
   }
-  #contenido div{
-    width: 100%;
+  .ContenedorFlex div{
+    width: 50%;
     margin: 0;
   }
 
@@ -67,6 +70,11 @@ header h1{color: white;
   .ContenedorFlex {
     display: flex;
     flex-direction: column;
+
+  }
+  .ContenedorFlex div{
+    width: 100%;
+    margin: 0;
   }
   #Imagen2 img{
     display: block;
@@ -80,5 +88,6 @@ header h1{color: white;
     margin: 0;
     padding-bottom: 0.1em;
   }
-  h1 {color: red !important; }
+  h1 {color: red !important;
+      padding-bottom: 0.5em;}
 }
