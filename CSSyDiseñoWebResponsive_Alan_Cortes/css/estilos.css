@@ -1,3 +1,48 @@
-body{
+body{margin: 0;
+     padding: 0;}
+
+header{
     background-color: #5b7989;
+    width:100%;
+    padding: 0;
+    height:310px;
 }
+
+figure{margin: 0;
+      padding: 0;
+      height: 90%;
+      vertical-align: middle;}
+
+figure img{
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 2%;
+  height: 90%;
+  border-radius: 10px 10px 0 0;
+}
+
+figure h1 {
+  display: inline-block;
+  /* margin-left: 25px; */
+  padding-bottom: 10px;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 10px #02010a;
+  margin: auto;
+}
+
+ nav ul{
+     float: right;
+     margin: 0;
+     padding:0px 15px;
+     display: inline-block;
+ }
+
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+
+}
+/*
+li a{text-decoration: none;} */
