@@ -6,21 +6,33 @@ body{
    padding: 0;
    box-sizing: border-box;
    display: block;
+   margin: auto;
    background-color: #02010a;
    font-family: "Dancing Script";
+   max-width: 900px;
    }
 
 .encabezado{
   background: #5b7989;
-  position: fixed;
   width: 100%;
+  height: 85px;
+  max-width: 900px;
   border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .encabezado h1{
   color: white;
   text-shadow: 2px 2px 10px #02010a;
-  margin-left: 5%;
-  margin-bottom: 0;
+  margin: 0 0 0 45px;
+  padding: 0;
+  font-weight: normal;
+  font-size: 2.1em;
+}
+#menu{
+  padding-top: 20px;
 }
 #menu ul{
    float: right;
@@ -33,74 +45,127 @@ body{
 }
 #menu ul li a{
   padding: 1rem 1rem;
-}
-
-#contenido {
-  padding-top: 5.4em;
+  color: white;
+  font-size: 1.2em;
 }
 #contenido img{
   box-shadow: 2px 2px 10px #02010a;
+  border: 1px solid black;
 }
 #contenido div figure{
   width: 100%;
   margin: 0;
 }
+/* ------------------------------------- */
 #Inicio{
   background-color: #82c3a6;
+  height: 470px;
+}
+#Inicio figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 #Inicio figure img{
   width: 85%;
   max-width: 900px;
   display: block;
-  margin: auto;
 }
-
-.ContenedorFlex{
+/* -------------------------------------- */
+#Paisajes figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#Paisajes figure img{
+  transform: none;
+  transition: transform 1s;
+}
+#Paisajes figure img:hover {
+  transform: rotate(10deg);
+  border: 2px solid black;
+  text-shadow: 2px 2px 10px #82c3a6;
+}
+/* --------------------------------------- */
+#Retratos figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#Retratos figure img{
+  transform: none;
+  transition: transform 1s;
+}
+#Retratos figure img:hover {
+  transform: translate(20px,-5px);
+  border: 2px solid black;
+  text-shadow: 2px 2px 10px #82c3a6;
+}
+.ImagenesSecundarias{
   display: flex;
   flex-direction: row;
   background-color: #d5c75f;
   width: 100%;
-  border: 1px solid white;
+  height: 215px;
 }
-.ContenedorFlex div{
+.ImagenesSecundarias div{
   width: 50%;
   margin: 0;
 }
-.ContenedorFlex div figure img{
+.ImagenesSecundarias div figure img{
     width: 70%;
     padding: 0;
-    margin-left: 0;
-    display: block;
-    margin: auto;
-    align-items: center;
+    margin: 0;
 }
-
+/* --------------------------------------------- */
 @media (max-width: 900px) {
-
-  .ContenedorFlex {
+  .encabezado{
     display: flex;
     flex-direction: column;
+    height: 120px;
   }
-  .ContenedorFlex div{
+  .encabezado h1{
+    color: white;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    width: 90%;
+    line-height: 1em;
+    font-size: 2em;
+    font-weight: normal;
+  }
+  #menu{
+    padding: 0;
+  }
+  .ImagenesSecundarias {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .ImagenesSecundarias div{
     width: 100%;
     margin: 0;
+  }
+  #Inicio{
+    height: auto;
   }
   #Inicio figure img{
-    width: 100%;
-    padding-bottom: 0.1em;
+    margin: 5%;
   }
-  #Paisajes img{
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 0.1em;
+  #Paisajes figure img{
+    width: 85%;
+    margin: 5%;
   }
-  #Retratos img{
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 0.1em;
+  #Retratos figure img{
+    width: 85%;
+    margin: 5%;
   }
-  .encabezado h1 {color: red !important;
-      padding-bottom: 0.5em;}
-}
