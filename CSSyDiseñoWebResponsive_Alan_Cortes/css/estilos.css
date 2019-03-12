@@ -1,25 +1,32 @@
-body{line-height: 1.6em;
-     margin:0;
-     padding: 0;
-     box-sizing: border-box;
-     display: block;
-     background-color: #82c3a6;
+
+
+body{
+   line-height: 1.6em;
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   display: block;
+   background-color: #02010a;
+   font-family: "Dancing Script";
    }
 
-.encabezado{background: #5b7989;
-            position: fixed;
-            width: 100%;
-            border-radius: 10px 10px 0 0;
+.encabezado{
+  background: #5b7989;
+  position: fixed;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
-header h1{color: white;
-          text-shadow: 2px 2px 10px #02010a;
-          margin-left: 5%;
-          margin-bottom: 0;
+.encabezado h1{
+  color: white;
+  text-shadow: 2px 2px 10px #02010a;
+  margin-left: 5%;
+  margin-bottom: 0;
 }
-#menu ul{float: right;
-       list-style: none;
-       padding: 0.5em;
-       margin: 0;}
+#menu ul{
+   float: right;
+   list-style: none;
+   padding: 0.5em;
+   margin: 0;}
 
 #menu ul li{
        display: inline-block;
@@ -31,7 +38,17 @@ header h1{color: white;
 #contenido {
   padding-top: 5.4em;
 }
-#Imagen1 figure img{
+#contenido img{
+  box-shadow: 2px 2px 10px #02010a;
+}
+#contenido div figure{
+  width: 100%;
+  margin: 0;
+}
+#Inicio{
+  background-color: #82c3a6;
+}
+#Inicio figure img{
   width: 85%;
   max-width: 900px;
   display: block;
@@ -45,6 +62,10 @@ header h1{color: white;
   width: 100%;
   border: 1px solid white;
 }
+.ContenedorFlex div{
+  width: 50%;
+  margin: 0;
+}
 .ContenedorFlex div figure img{
     width: 70%;
     padding: 0;
@@ -52,42 +73,34 @@ header h1{color: white;
     display: block;
     margin: auto;
     align-items: center;
-  }
-  #contenido div figure{
-    width: 100%;
-    margin: 0;
-  }
-  .ContenedorFlex div{
-    width: 50%;
-    margin: 0;
-  }
+}
 
-@media (max-width: 640px) {
-  #Imagen1 figure img{
-    width: 100%;
-    padding-bottom: 0.1em;
-  }
+@media (max-width: 900px) {
+
   .ContenedorFlex {
     display: flex;
     flex-direction: column;
-
   }
   .ContenedorFlex div{
     width: 100%;
     margin: 0;
   }
-  #Imagen2 img{
+  #Inicio figure img{
+    width: 100%;
+    padding-bottom: 0.1em;
+  }
+  #Paisajes img{
     display: block;
     width: 100%;
     margin: 0;
     padding-bottom: 0.1em;
   }
-  #Imagen3 img{
+  #Retratos img{
     display: block;
     width: 100%;
     margin: 0;
     padding-bottom: 0.1em;
   }
-  h1 {color: red !important;
+  .encabezado h1 {color: red !important;
       padding-bottom: 0.5em;}
 }
